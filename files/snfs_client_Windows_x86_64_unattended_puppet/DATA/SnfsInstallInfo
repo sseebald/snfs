@@ -1,0 +1,43 @@
+#
+# For Fully Automated Installation:
+#
+#     Copy this file to: <Install Disk Dir>/DATA/SnfsInstallInfo
+#     Set setup params:  See parameters below
+#     Set up .cli:       See "Auto-Import Client (mount) Configurations" below
+#     Run                SnfsSetup.exe
+#
+#   Auto-Import Client (mount) Configurations
+#
+# 1. Manually configure one Client with drives mapped as desired
+# 2. Run: cvntcfgimpexp.exe export SnCliCfg.cli
+# 3. Copy SnCliCfg.cli to <Install Disk Dir>/DATA
+#
+ 
+#
+# Read End User License Agreement and change to "yes".
+#
+AcceptEULA="yes"
+ 
+#
+# Unattended: "yes" or "no"
+#
+Unattended="yes"
+ 
+#
+# InstallMode: "Auto", "Skip", "Manual"
+#
+# NOTE: If Unattended="yes", InstallMode is forced to "Auto"
+#
+# Auto:   Runs install, upgrade, import, and reboot (if necessary).
+# Skip:   Skips install.  Runs upgrade and import only.
+# Manual: Normal install with dialogs.
+#
+#
+InstallMode="Auto"
+ 
+#
+# Install these components: "yes" or "no" (Default is Client-only install)
+#
+InstallClient="yes"
+InstallHelp="yes"
+InstallServer="no"
