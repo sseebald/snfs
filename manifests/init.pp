@@ -6,7 +6,7 @@ class snfs {
 
   file { 'C:\temp\7z920-x64.msi':
     ensure => present,
-    source => '\\lax029164nas1c\Store1\Software\7z920-x64.msi',
+    source => '\\\\lax029164nas1c\Store1\Software\7z920-x64.msi',
     require => File['C:\temp'],
   }
 
@@ -24,7 +24,7 @@ class snfs {
 
   file { 'C:\temp\snfs_client_Windows_x86_64_unattended_puppet.zip': 
     ensure => present,
-    source => '\\lax029164nas1c\Store1\Software\snfs_client_Windows_x86_64_unattended_puppet.zip',
+    source => '\\\\lax029164nas1c\Store1\Software\snfs_client_Windows_x86_64_unattended_puppet.zip',
     require => File['C:\temp'],
   }
 
